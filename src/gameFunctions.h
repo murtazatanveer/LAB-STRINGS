@@ -1,12 +1,11 @@
+//TODO: define, document, and implement this function
+
+void initializeBlankString(int size,char *s);
+//TODO: define, document, and implement this function
+void printWithSpaces(char *s);
 
 //TODO: define, document, and implement this function
-initializeBlankString();
-
-//TODO: define, document, and implement this function
-printWithSpaces();
-
-//TODO: define, document, and implement this function
-revealGuessedLetter();
+revealGuessedLetter(const char *str_1, char *str_2,char ch);
 
 //TODO: define, document, and implement this function
 checkGuess();

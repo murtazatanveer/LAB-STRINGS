@@ -4,11 +4,49 @@
 
 #include "gameFunctions.h"
 
-initializeBlankString() {}
+void initializeBlankString(int size,char *s) {
 
-printWithSpaces() {}
+for (int i=0;i<size;i++){
 
-revealGuessedLetter() {}
+s[i] = '_';
+
+}
+
+
+}
+
+void printWithSpaces(char *s) {
+
+int size = ( strlen(s) + ( strlen(s) - 1 ) ) + 1;
+
+char new_str[size];
+
+new_str[size-1]='\0';
+
+for(int i =0;i<(size-1);i++){
+
+if(i % 2 != 0){
+
+new_str[i]=' ';
+
+}
+
+else{
+
+new_str[i]=*s;
+s++;
+
+}
+
+}
+
+printf("%s",new_str);
+
+}
+
+int revealGuessedLetter(const char *str_1, char *str_2,char ch) {
+
+}
 
 checkGuess() {}
 

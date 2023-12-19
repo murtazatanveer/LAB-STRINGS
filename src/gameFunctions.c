@@ -75,7 +75,19 @@ return 1;
 
 }
 
-checkGuess() {}
+int checkGuess(char *str_1, char *str_2) {
+
+int check = strcmp(str_1,str_2);
+
+if(check==0){
+
+return 1;
+
+}
+
+return 0;
+  
+}
 
 void startGame(char word[25]) {
   int won = 0;  // Flag to see if the user has won yet

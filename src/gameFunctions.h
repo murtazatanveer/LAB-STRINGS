@@ -5,10 +5,10 @@ void initializeBlankString(int size,char *s);
 void printWithSpaces(char *s);
 
 //TODO: define, document, and implement this function
-revealGuessedLetter(const char *str_1, char *str_2,char ch);
+int revealGuessedLetter(const char *str_1, char *str_2,char ch);
 
 //TODO: define, document, and implement this function
-checkGuess();
+int checkGuess(char *str_1, char *str_2);
 
 
 //the following functions have been done for you.

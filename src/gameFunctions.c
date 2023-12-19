@@ -46,6 +46,33 @@ printf("%s",new_str);
 
 int revealGuessedLetter(const char *str_1, char *str_2,char ch) {
 
+
+  
+int count=0;
+
+while(*str_1 != '\0'){
+
+if(*str_1==ch){
+
+*str_2=ch;
+count++;
+
+}
+
+str_1++;
+str_2++;
+
+}
+
+if(count==0){
+
+return 0;
+
+}
+
+return 1;
+
+
 }
 
 checkGuess() {}
